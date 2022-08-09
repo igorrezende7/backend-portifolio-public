@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    .div-form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10em 0em;
+  flex-direction: column;
+}
+h1{
+    text-align: center;
+    width: 100%;
+}
+.submit{
+   text-align: center;
+}
+input{
+    margin: 5px;
+    padding: 5px;
+}
+
+</style>
+<body>
+    
+    <div class="div-form">   
+        <h1>Login</h1>
+        <form action="/" method="POST">
+            <input name="username" type="text"/><br/>
+            <input name="password" type="password"/> <br/>
+           <div  class="submit"><input type="submit" value="login"/></div> 
+        </form>
+
+        <% if(message) { %>
+            <p>
+                <label style="color: red;"><%= message %></label>
+            </p>
+        <%}%>
+</div>
+
+
+
+</body>
+</html>
