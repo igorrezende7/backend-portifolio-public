@@ -2,7 +2,7 @@ const {hashSync} = require('bcryptjs')
 const bcrypt = require('bcryptjs')
 const LocalStrategy = require('passport-local').Strategy;
 require('dotenv');
-const pass = 'administrator';
+const pass = process.env.PASS;
 const senha = hashSync(pass, 10)
 const users = [{
     _id:1,
