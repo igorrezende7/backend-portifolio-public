@@ -2,10 +2,10 @@ var express = require('express');
 var router = express.Router();
 var Cliente = require('../models/clientes')
 const nodemailer = require('nodemailer')
-require('dotenv').config()
 
-const user = process.env.USER
-const pass = process.env.PASSWORD
+
+const user = "igorrezende@solucoesdevs.com"
+const pass = "Vacaamarela1@"
 
 /* GET users listing. */
 router.get('/', async(req, res)=>{
